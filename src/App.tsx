@@ -55,7 +55,7 @@ export async function loader({ request }: { request: Request }) {
 
 export default function FilterPage() {
   const data = useLoaderData() as any;
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [_searchParams, setSearchParams] = useSearchParams();
 
   const changeProvince = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (e.target.value === "") {
